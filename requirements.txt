@@ -1,0 +1,3 @@
+asyncio
+crawl4ai
+pydantic
