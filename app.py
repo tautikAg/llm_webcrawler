@@ -8,7 +8,6 @@ from crawl4ai.extraction_strategy import LLMExtractionStrategy
 from pydantic import BaseModel, Field
 
 #lets use the ollam deepseek
-from ollama import 
 
 URL_TO_SCRAPE = "https://web.lmarena.ai/leaderboard"
 
@@ -23,8 +22,8 @@ class Product(BaseModel):
 async def main():
 
     llm_strategy = LLMExtractionStrategy(
-        provider="deepseek/deepseek-chat",
-        api_token=os.getenv("DEEPSEEK_API"),
+        provider="ollama/deepseek-r1",
+        # api_token=os.getenv("DEEPSEEK_API"),
         schema=Product.model_json_schema(),
         extraction_type="schema",
         instruction=INSTRUCTION_TO_LLM,
