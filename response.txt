@@ -1,0 +1,12 @@
+[
+    {
+        "index": 0,
+        "tags": [
+            "error_message"
+        ],
+        "content": [
+            "The page contains an error message indicating that privacy-related extensions may cause issues on x.com. Please disable them and try again."
+        ],
+        "error": false
+    }
+]
